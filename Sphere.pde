@@ -26,6 +26,8 @@ public class Sphere extends Shape {
         return new Intersection();
         
       float dt = sqrt(r2 - d2);
+      
+      return new Intersection(true, t - dt, -1);
     }
     
     @Override
@@ -48,8 +50,27 @@ public class Sphere extends Shape {
       
       PVector viewDirection = PVector.mult(ray.direction, -1.0);
       
-      return new ShaderGlobals(point, normal, uv, tangentU, tangentV, viewDirection, null);
-      
+      return new ShaderGlobals(point, normal, uv, tangentU, tangentV, viewDirection, null, null, null);
+    }
+    
+    @Override
+    public float surfaceArea() {
+        return 4.0 * PI * radius * radius;
+    }   
+
+    @Override
+    public PVector evaluate(ShaderGlobals shaderGlobals) {
+        return null;
+    }
+    
+    @Override
+    public float pdf(ShaderGlobals shaderGlobals) {
+        return 0;
+    }
+    
+    @Override
+    public PVector sample(ShaderGlobals shaderGlobals, PVector sample) {
+        return null;
     }
     
 }

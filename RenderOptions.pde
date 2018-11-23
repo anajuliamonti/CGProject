@@ -1,13 +1,13 @@
-public class RenderOptions(){
-  int width;
-  int height;
-  int maximumDepth;
-  int cameraSamples;
-  int lightSamples;
-  int diffuseSamples;
-  float filterWidth;
-  float gamma;
-  float exposure;
+public class RenderOptions{
+  public int width;
+  public int height;
+  public int maximumDepth;
+  public int cameraSamples;
+  public int lightSamples;
+  public int diffuseSamples;
+  public float filterWidth;
+  public float gamma;
+  public float exposure;
   
   public RenderOptions() {}
   

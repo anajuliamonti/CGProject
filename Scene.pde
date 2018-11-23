@@ -8,7 +8,7 @@ public class Scene {
     this.shapes = shapes;
   }
     
-  public Intersection Intersects(Ray ray) {
+  public Intersection intersects(Ray ray) {
     Intersection intersection = new Intersection();
       
     for(int i=0;i<shapes.size();i++){

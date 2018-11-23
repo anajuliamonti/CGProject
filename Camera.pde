@@ -19,7 +19,7 @@ public class Camera{
     worldMatrix = new PMatrix3D(u.x, v.x, w.x, position.x,
       u.y, v.y, w.y, position.y,
       u.z, v.z, w.z, position.z,
-      0, 0, 0, 1);
+      0, 0, 0, 1.0);
   }
   
   public void transform(PMatrix3D transformation){

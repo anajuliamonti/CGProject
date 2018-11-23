@@ -17,6 +17,6 @@ public abstract class Shape extends Light{
   }
   
   public abstract Intersection intersects(Ray ray);
-  public abstract ShaderGlobals calculateShadeGlobals(Ray ray,Intersection intersection);
+  public abstract ShaderGlobals calculateShaderGlobals(Ray ray,Intersection intersection);
   public abstract float surfaceArea();
 }

@@ -1,7 +1,7 @@
 public class Intersection {
-    boolean hit = false;
-    float distance = INFINITY;
-    int index = -1;
+    boolean hit;
+    float distance;
+    int index;
 
     public Intersection() {
       hit = false;
